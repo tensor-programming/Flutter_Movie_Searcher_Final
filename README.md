@@ -1,1 +1,10 @@
-# Flutter_Movie_Searcher_Final
+# Flutter_movie_part_2
+
+### In this final part of our Movie searcher tutorial, we setup the favorites tab and then clean up the code. 
+
+### To build this application, you will need the latest version of the flutter preview build and Dart 2.0 SDK for more information, [click here](https://github.com/flutter/flutter/wiki/Trying-the-preview-of-Dart-2-in-Flutter)
+### Check out the Youtube Tutorial for this [Dart Flutter Program](https://youtu.be/s3tPTRV58OM). Here is our [Youtube Channel](https://www.youtube.com/channel/UCYqCZOwHbnPwyjawKfE21wg) Subscribe for more content.
+
+### Check out our blog at [tensor-programming.com](http://tensor-programming.com/).
+
+### Our [Twitter](https://twitter.com/TensorProgram), our [facebook](https://www.facebook.com/Tensor-Programming-1197847143611799/) and our [Steemit](https://steemit.com/@tensor).
