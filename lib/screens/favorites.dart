@@ -4,6 +4,7 @@ import 'package:movie_app/model/model.dart';
 import 'package:movie_app/database/database.dart';
 
 import 'package:rxdart/rxdart.dart';
+import 'package:share/share.dart';
 
 class Favorites extends StatefulWidget {
   @override
@@ -82,7 +83,26 @@ class FavoritesState extends State<Favorites> {
                   initiallyExpanded: filteredMovies[index].isExpanded ?? false,
                   onExpansionChanged: (b) =>
                       filteredMovies[index].isExpanded = b,
-                  children: <Widget>[],
+                  children: <Widget>[
+                    Container(
+                      padding: EdgeInsets.all(10.0),
+                      child: RichText(
+                        text: TextSpan(
+                          text: filteredMovies[index].overview,
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                      ),
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.share),
+                      onPressed: () {
+                        share('${filteredMovies[index].title}');
+                      },
+                    )
+                  ],
                   leading: IconButton(
                     icon: Icon(Icons.delete),
                     onPressed: () {
