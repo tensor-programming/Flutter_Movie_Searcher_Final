@@ -12,6 +12,8 @@ dependencies:
   path_provider: "^0.3.1"
   rxdart: ^0.16.1
   share: ^0.4.0
+  #Scott: We need add below package
+  http: 
 
 dev_dependencies:
   flutter_test:
