@@ -32,10 +32,10 @@ class MovieDatabase {
   }
 
   void _onCreate(Database db, int version) async {
-    await db.execute('''"CREATE TABLE Movies(id STRING PRIMARY KEY, 
+    await db.execute('''CREATE TABLE Movies(id STRING PRIMARY KEY, 
         title TEXT, poster_path TEXT, 
         overview TEXT, 
-        favored BIT)"''');
+        favored BIT)''');
 
     print("Database was Created!");
   }
