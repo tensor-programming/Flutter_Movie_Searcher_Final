@@ -99,7 +99,7 @@ class FavoritesState extends State<Favorites> {
                     IconButton(
                       icon: Icon(Icons.share),
                       onPressed: () {
-                        share('${filteredMovies[index].title}');
+                        Share.share('${filteredMovies[index].title}');
                       },
                     )
                   ],
